@@ -1,10 +1,10 @@
 # Project Oblio: Mobile Populism
 
-(Under contstruction). Most of the information is here, and is completely subject to change. Particularly the constants (1000, 10, etc). 
-
-Remember that Project Oblio is an EXPERIMENT. We hope to learn from this initial exploration into proof-of-individual crypto voting in order for our project (or other projects) to adapt and improve on this system in the futre.
-
 Mobile Populism is Project Oblio's economic theory that the "wisdom of the crowds" prevails. It also states that people are just as, if not more,  incentivized by a combination of financial security and social respect as they are wealth accumulation. It does create financial incentives for nearly every component of this network, but it does them in a way that rely on biological barriers to computation. The financial incentive for "faking-out" block producers is smaller than the cost of 1) computation 2) losing OBL to the challenger-verifiers market. 
+
+<div style="text-align:center"><img src ="http://projectoblio.com/figure14-2" /></div>
+
+(Under private development -- all constants here are not their latest version, and every aspect described herein is subject to change.)
 
 ## Table of Contents
 1. Summary
@@ -111,14 +111,15 @@ Thus, the consensus algorithm has two main functions:
 This describes the three-tier voting system used as the default across the network for changing network constants and funding experiments.
 
 #### Wealth-based Component (1/3)
-- [x] Here, a "committed" OBL counts as one vote, while an "absentee" OBL counts as 1/3rd of a vote, split between "yes, fund this", and "no, don't fund this. An account holder can elect to vote / not vote for a budget proposal based on the amount of OBL it has in their account address. 
+- [x] Here, a "committed" OBL counts as one vote, while an "absentee" OBL counts as 1/5th of a vote, split between "yes, fund this", and "no, don't fund this. An account holder can elect to vote / not vote for a budget proposal based on the amount of OBL it has in their account address. 
 - [x]  An account holder must have at least the biometric trust level of karma (default: 10) in its account to count their OBL as a vote. 
 - [x]  Additionally, any OBL that a user has donated back to the budget system counts as one vote (see later section).   
-- [x]  One OBL = One Vote *within* the wealth-based component (1/3 of the decision).  
+- [x]  One OBL = One Vote *within* the wealth-based component (1/3 of the final decision).  
 - [x] The maximum amount of OBL votes a user can have is 1,300. 
----> What happens if an OBL doesn't vote? An OBL that does not vote is considered to be "split" --> half their vote counts towards yes, and half their vote counts towards no, but it is weighted at 1/3rd the value of a comitted vote. Thus, the smart contract must keep a total running tally of all the OBL that is held within accounts within at least 10 karma, because this is the only OBL that is eligible to vote. Then, it must take those that OBL that were voted, and split the remaining OBL 50-50.
----> E.g. if 2 OBL vote yes, but 98 OBL didn't vote, the total wealth-based component yes is (20 + 32.6) yes and (0 + 32.6) no. Percentage-wise, this looks like 61% yes.
----> The value ("1/3rd") is a value to be decided in the system of checks and balances by a function of (1) a constant determined by democracy based voters and representative based voters as well as (2) the number of recent active OBLs in the voting system. 
+---> What happens if an OBL doesn't vote? An OBL that does not vote is considered to be "split" --> half their vote counts towards yes, and half their vote counts towards no, but it is weighted at 1/5th the value of a comitted vote. Thus, the smart contract must keep a total running tally of all the OBL that is held within accounts within at least 10 karma, because this is the only OBL that is eligible to vote. Then, it must take those that OBL that were voted, and split the remaining OBL 50-50.
+---> Typical crypto governance systems have 2-15% participation based on token values. If 10 OBL vote yes, 5 OBL vote no, and 85 OBL didn't vote, the total wealth-based component is (10 + 85/5) "yes" and (5 + 85/5) "no". Percentage-wise, this looks like 54% yes.
+---> I
+---> The value ("1/5th") is a value to be decided in the system of checks and balances by a function of (1) a constant determined by democracy based voters and representative based voters as well as (2) the number of recent active OBLs in the voting system. 
 
 #### Democracy-based Component (1/3) 
 - [x] A user with a karma score of at least the biometric trust threshold has exactly 1 vote. 
