@@ -1,8 +1,10 @@
 # Project Oblio: Mobile Populism
 
+<div style="text-align:center"><img height="200" width="200" src="http://projectoblio.com/wp-content/uploads/2018/07/figure14-1.png" /></div>
+
+
 Mobile Populism is Project Oblio's economic theory that the "wisdom of the crowds" prevails. It also states that people are just as, if not more,  incentivized by a combination of financial security and social respect as they are wealth accumulation. It does create financial incentives for nearly every component of this network, but it does them in a way that rely on biological barriers to computation. The financial incentive for "faking-out" block producers is smaller than the cost of 1) computation 2) losing OBL to the challenger-verifiers market. 
 
-<div style="text-align:center"><img src ="http://projectoblio.com/wp-content/uploads/2018/07/figure14-1.png" /></div>
 
 (Under private development -- all constants here are not their latest version, and every aspect described herein is subject to change.)
 
@@ -82,7 +84,7 @@ Mobile Populism consists of six roles and three key terms.
 Two systems exist for running the network's engine. The first is an upper-level voting system with three components. It is slower and more secure. The next is a lower-level system for verifying additions and subtractions to a user's karma level. It is fast in the block-producing component, but slower in the challenging and verification markets. 
 
 #### Voting Roles (Upper-Level)
-<div style="text-align:center"><img width="500" height="500" src =".gif" /></div>
+
 A proof-of-individual voting system *must* take into account tragedy of the commons. Every voter is required to be provably unique (re: biometric trust level), but some voters can have weights counted as more if they are trusted more by the network (representative-based) or have more invested in the network's success (wealth-based).
 * Wealth-based voter. A wealth-based voter has at least 10 Karma. If they have at least 10 Karma, each of their OBLs counts as one vote. Additionally, any OBL that a user has donated back to the budget system counts as one vote. The maximum amount of OBL votes a user can have is 1,300. 
 * Democracy-based voter. A democracy-based voter has at least 10 karma. Their account receives exactly one vote.
@@ -115,6 +117,7 @@ Thus, the consensus algorithm has two main functions:
 This describes the three-tier voting system used as the default across the network for changing network constants and funding experiments.
 
 #### Wealth-based Component (1/3)
+
 <div style="text-align:center"><img width="220" height="120" src ="http://projectoblio.com/wp-content/uploads/2018/07/wealth-based.png" /></div>
 - [x] Here, a "committed" OBL counts as one vote, while an "absentee" OBL counts as 1/5th of a vote, split between "yes, fund this", and "no, don't fund this. An account holder can elect to vote / not vote for a budget proposal based on the amount of OBL it has in their account address. 
 - [x]  An account holder must have at least the biometric trust level of karma (default: 10) in its account to count their OBL as a vote. 
