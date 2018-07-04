@@ -9,6 +9,40 @@ Mobile Populism is Project Oblio's economic theory that the "wisdom of the crowd
 (Under private development -- all constants here are not their latest version, and every aspect described herein is subject to change.)
 (This version of our README needs to be re-formatted)
 
+## Table of Contents
+<div id="toc"></div>
+1. Summary
+2. Detailed Overview
+	a. Key Terms
+	b. Roles
+		i. Voting Roles
+			o. Wealth-based voter
+			oo. Democracy-based voter
+			ooo. Representative-based voter
+		ii. Biometric Trust Roles
+			o. Block-Producer
+			oo. Challenger
+			ooo. Verifier 
+3. Voting Components
+	a. Funding Proposals
+		i. Wealth-Based Component
+		ii. Democracy-Based Component
+		iii. Representative-Based Component
+		iv. Example
+	b. Checks and Balances
+		i. Checking Wealth-Based Component Voters
+		ii. Checking Democracy-Based Component Voters
+		iii. Checking Representative-Based Component Voters
+		iv. Lower-Level and Meta Checks
+4. Biometric Trust Components
+	a. Challenger-Verifier Markets
+	b. Block Producers
+5. Karma
+	a. Affecting Karma scores
+	b. Karma as an OBL Interest Rate
+6. Conclusion
+
+
 ## Summary
 
 A function exists for submitting proposals:
@@ -26,14 +60,14 @@ Three Functions for Budget Systems (Functions):
 These votes are add together to pass or not pass a proposal. Each component is counted separately, then weighted to 1/3 of the final votes. 
 
 User structure (an object): 
-* Karma (integer). 
-* OBL (token account value)
-* Biometric trust threshold: 10 karma (Default). If a user is above this, they get priviledges:
-	* Someone with 10 karma can vote in Wealth and Democracy based cmponents
-	* Someone with 1000 karma can vote in Wealth, Representative, and Democracy based components
-	* Backers (an array of ethereum addresses)
-	* totalOblDonated (an integer)
-	* ... 
+	Karma (integer). 
+	OBL (token account value)
+	Biometric trust threshold: 10 karma (Default). If a user is above this, they get priviledges:
+		Someone with 10 karma can vote in Wealth and Democracy based cmponents
+		Someone with 1000 karma can vote in Wealth, Representative, and Democracy based components
+	Backers (an array of ethereum addresses)
+	totalOblDonated (an integer)
+	... 
 
 
 
