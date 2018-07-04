@@ -2,7 +2,7 @@
 
 Mobile Populism is Project Oblio's economic theory that the "wisdom of the crowds" prevails. It also states that people are just as, if not more,  incentivized by a combination of financial security and social respect as they are wealth accumulation. It does create financial incentives for nearly every component of this network, but it does them in a way that rely on biological barriers to computation. The financial incentive for "faking-out" block producers is smaller than the cost of 1) computation 2) losing OBL to the challenger-verifiers market. 
 
-<div style="text-align:center"><img src ="http://projectoblio.com/figure14-2" /></div>
+<div style="text-align:center"><img src ="http://projectoblio.com/wp-content/uploads/2018/07/figure14-1.png" /></div>
 
 (Under private development -- all constants here are not their latest version, and every aspect described herein is subject to change.)
 
@@ -71,7 +71,9 @@ User structure (an object):
 
 Mobile Populism consists of six roles and three key terms.
 
+
 ### Key terms
+
 * OBL. A measure of wealth. A traditional token. Not intended to be proof-of-individual, although the initial distribution is intended to be mostly proof-of-individual.
 * Karma. NOT a token. Just a "Score" associated with an account. The calculation for the karmic stream is explained at the end. 
 * Biometric trust level. The minimum amount of biometricity needed to vote. Based on selfie videos, voice recordings, brainwaves, muscle movements, and any provably unique fluid biometric. May be added to based on uPort identities and "acceptances" from other users already accepted. The "link" between the upper and lower levels of the government.
@@ -80,12 +82,14 @@ Mobile Populism consists of six roles and three key terms.
 Two systems exist for running the network's engine. The first is an upper-level voting system with three components. It is slower and more secure. The next is a lower-level system for verifying additions and subtractions to a user's karma level. It is fast in the block-producing component, but slower in the challenging and verification markets. 
 
 #### Voting Roles (Upper-Level)
+<div style="text-align:center"><img width="500" height="500" src =".gif" /></div>
 A proof-of-individual voting system *must* take into account tragedy of the commons. Every voter is required to be provably unique (re: biometric trust level), but some voters can have weights counted as more if they are trusted more by the network (representative-based) or have more invested in the network's success (wealth-based).
 * Wealth-based voter. A wealth-based voter has at least 10 Karma. If they have at least 10 Karma, each of their OBLs counts as one vote. Additionally, any OBL that a user has donated back to the budget system counts as one vote. The maximum amount of OBL votes a user can have is 1,300. 
 * Democracy-based voter. A democracy-based voter has at least 10 karma. Their account receives exactly one vote.
 * Representative-based voter. A representative-based voter has at least 10 democracy-based voters "Backing" them, and at least 1000 karma in their account. 
 
 #### Biometric Trust Roles (Lower-Level)
+
 A financially incentivized challenger/verifier market keeps block-producers honest. 
 * Block-producer. This is an array of ethereum accounts that do commands at a lower-level, not within the smart contracts. The only thing to know about them right now is that this array can be added to or removed by a 60% majority vote of representatives and democrats.
 * Challenger. This is a person who challenges the decisions of the block-producer. 
@@ -111,6 +115,7 @@ Thus, the consensus algorithm has two main functions:
 This describes the three-tier voting system used as the default across the network for changing network constants and funding experiments.
 
 #### Wealth-based Component (1/3)
+<div style="text-align:center"><img width="220" height="120" src ="http://projectoblio.com/wp-content/uploads/2018/07/wealth-based.png" /></div>
 - [x] Here, a "committed" OBL counts as one vote, while an "absentee" OBL counts as 1/5th of a vote, split between "yes, fund this", and "no, don't fund this. An account holder can elect to vote / not vote for a budget proposal based on the amount of OBL it has in their account address. 
 - [x]  An account holder must have at least the biometric trust level of karma (default: 10) in its account to count their OBL as a vote. 
 - [x]  Additionally, any OBL that a user has donated back to the budget system counts as one vote (see later section).   
@@ -122,6 +127,7 @@ This describes the three-tier voting system used as the default across the netwo
 ---> The value ("1/5th") is a value to be decided in the system of checks and balances by a function of (1) a constant determined by democracy based voters and representative based voters as well as (2) the number of recent active OBLs in the voting system. 
 
 #### Democracy-based Component (1/3) 
+<div style="text-align:center"><img width="120" height="120"  src ="http://projectoblio.com/wp-content/uploads/2018/07/Picture16_people.png" /></div>
 - [x] A user with a karma score of at least the biometric trust threshold has exactly 1 vote. 
 - [x] A user with a karma score of more than the biometric trust threshold still has 1 vote. 
 - [x] The first 10 karma a user are earned is based on their biometricity (determined by the "block producers", explained later), so this is effectively a one-person-one-vote democracy. 
@@ -129,6 +135,7 @@ This describes the three-tier voting system used as the default across the netwo
 ---> This means if only 2 people vote and they vote yes, then the total democracy-based component is 100% yes and 0% no.
 
 #### Representative-based Component (1/3)
+<div style="text-align:center"><img width="120" height="120"  src ="http://projectoblio.com/wp-content/uploads/2018/07/Picture34_building.png" /></div>
 - [x] A representative is a user with at least 1000 karma who has at least 10 unique backers, with each backer having karma at or above the biometric trust threshold.  
 - [x] One representative counts as 1 vote within the representative-based component. See later for discussions of the "multiplication constant" for these values.
 ---> What happens if a representative doesn't vote? Unlike democracy and wealth-based components, a representative who does not vote is automatically considered a "no". This encourages democracy-based users to only back active representatives.
@@ -184,6 +191,7 @@ To be completed, mainly because Truebit and a number of other really good projec
 A market exists to create a financial incentive to "check" the decisions made by block producers, who run the biometric verification algorithms. 
 
 ### Block Producers
+<div style="text-align:center"><img width="120" height="120"  src ="http://projectoblio.com/wp-content/uploads/2018/07/Picture13_factory.png" /></div>
 As described prevously, any account is eligible to apply to be a block producer. This is a separate account flag (or array) that is "under-the-hood". On the lower levels (not to be worried about until the go-oblio implementation), a block producer can be voted out by a vote within the other members of the block producers. This is necessary to quickly kick out spammers among block producers.
 
 Block producers use a lot of computational power to verify identities. They will likely be paid as part of the budget contract when go-oblio launches. 
