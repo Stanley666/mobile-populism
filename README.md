@@ -73,7 +73,7 @@ Mobile Populism consists of six roles and three key terms.
 
 ### Key terms
 * OBL. A measure of wealth. A traditional token. Not intended to be proof-of-individual, although the initial distribution is intended to be mostly proof-of-individual.
-* Karma. NOT a token. Just a "Score" associated with an account. The calculation for the karmic is explained at the end. 
+* Karma. NOT a token. Just a "Score" associated with an account. The calculation for the karmic stream is explained at the end. 
 * Biometric trust level. The minimum amount of biometricity needed to vote. Based on selfie videos, voice recordings, brainwaves, muscle movements, and any provably unique fluid biometric. May be added to based on uPort identities and "acceptances" from other users already accepted. The "link" between the upper and lower levels of the government.
 
 ### Roles
